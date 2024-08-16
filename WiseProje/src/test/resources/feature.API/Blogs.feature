@@ -1,8 +1,8 @@
 Feature: As a provider I want to be able to access blogs via API connection.
 
-  Scenario Outline: Blog List
+  Scenario: Blog List
 
-    * The api user sets "api/blogs/<id>" path parameters.
+    * The api user sets "api/blogs" path parameters.
     # Api kullanicisi "api/blogs" path parametrelerini olusturur
     * The api user sends a "GET" request and saves the returned response.
     # Api kullanicisi GET request gonderir ve donen responsei kaydeder
@@ -10,10 +10,6 @@ Feature: As a provider I want to be able to access blogs via API connection.
     # Api kullanicisi status codeun 200 oldugunu dogrular
     * The api user verifies that the "response.response_message" information in the response body is "Blogs Listed Successfully".
     # Api kullanicisi response bodydeki response.response_message bilgisinin "Blogs Listed Successfully" oldugunu dogrular
-
-    Examples:
-    | id |
-    | 31 |
 
 
   Scenario: Invalid Token Blog List
