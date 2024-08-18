@@ -32,7 +32,7 @@ src/test/resources: Test verileri ve testlerin çalışması için gerekli yapı
 
 Projenin Kopyalanması: Öncelikle projeyi yerel makinenize klonlayın.
 
-Kodu kopyala: git clone https://github.com/your-repository-url.git
+Kodu kopyala: git clone https://github.com/ak4rmurat/Team2_OnlineMasterMarketBackEndProje.git
 
 Projeyi Açın: IntelliJ IDEA veya tercih ettiğiniz IDE ile projeyi açın.
 
