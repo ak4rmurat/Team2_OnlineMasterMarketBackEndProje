@@ -1,43 +1,60 @@
-# API Test Projesi: 
+# API Test Otomasyon Projesi
 
-Bu proje, bir sağlayıcı olarak API bağlantıları üzerinden çeşitli işlemleri gerçekleştiren servislerin test edilmesini amaçlayan bir test otomasyon projesidir. Proje, API endpoint'lerinin doğru şekilde çalıştığını doğrulamak için test senaryolarını içerir.
+API Test Otomasyon Projesi'ne hoş geldiniz! Bu proje, servislerle ilgili çeşitli API endpoint'lerinin güvenilirliğini sağlamak için test süreçlerini otomatikleştirmek üzere tasarlanmıştır. Amacımız, API endpoint'lerinin farklı senaryolar altında beklenen şekilde çalıştığını doğrulayarak, güçlü ve hatasız bir servis deneyimi sunmaktır.
 
-# Kullanılan Teknolojiler:
+# Kullanılan Teknolojiler
 
-Postman: API isteklerini test etmek ve doğrulamak için kullanılır.
+Postman: API isteklerini oluşturmak, göndermek ve doğrulamak için kullanılır.
 
-Java: Test otomasyonunu gerçekleştirmek için kullanılan programlama dili.
+Java: Test otomasyonu için kullanılan ana programlama dili.
 
-JUnit: Testleri çalıştırmak ve sonuçları raporlamak için kullanılır.
+JUnit: Testleri çalıştırmak ve raporlar oluşturmak için kullanılan framework.
 
-Gherkin: Test senaryolarını tanımlamak için kullanılan dil.
+Gherkin: Test senaryolarını insan tarafından okunabilir formatta tanımlamak için kullanılan dil.
 
-Cucumber: Gherkin senaryolarını çalıştırarak test otomasyonunu gerçekleştirmek için kullanılır.
+Cucumber: Gherkin senaryolarını çalıştırarak Java ile entegrasyonu sağlar ve otomasyonu gerçekleştirir.
 
-IntelliJ IDEA: Projeyi geliştirmek ve çalıştırmak için kullanılan IDE.
+IntelliJ IDEA: Kod yazmak ve çalıştırmak için kullanılan Entegre Geliştirme Ortamı (IDE).
 
-MySQL: Veritabanı işlemlerini gerçekleştirmek ve doğrulamak için kullanılır.
+MySQL: Veri bütünlüğünü test etmek ve veritabanı işlemlerini doğrulamak için kullanılan veritabanı.
+
+# Proje Yapısı
+
+src/test/resources/features: Tüm Gherkin tabanlı test senaryolarını içerir.
+
+src/test/java/stepdefinitions: Gherkin'de tanımlanan adımların Java ile uygulandığı sınıflar burada bulunur.
+
+src/test/java/runners: Test senaryolarını çalıştıran Cucumber runner sınıflarını içerir.
+
+src/test/resources: Test verileri ve testlerin çalışması için gerekli yapılandırma dosyalarını içerir.
+
+# Testlerin Nasıl Çalıştırılacağı
+
+Projenin Kopyalanması: Öncelikle projeyi yerel makinenize klonlayın.
+
+Kodu kopyala: git clone https://github.com/your-repository-url.git
+
+Projeyi Açın: IntelliJ IDEA veya tercih ettiğiniz IDE ile projeyi açın.
+
+Bağımlılıkları Yükleyin: Gerekli tüm bağımlılıkları yükleyin. Proje yapılandırmasına göre Maven veya Gradle kullanabilirsiniz.
+
+Testleri Çalıştırın: src/test/java/runners dizinine giderek, istediğiniz Cucumber runner sınıfını çalıştırın.
+
+Test Sonuçlarını İnceleyin: Çalıştırma sonrası test sonuçlarını ve oluşturulan raporları inceleyerek sonuçları analiz edin.
+
+# Veritabanı Testleri
+
+Bu proje, API endpoint testlerinin yanı sıra veri bütünlüğünü sağlamak için veritabanı testlerini de içerir. 
+
+# Katkıda Bulunma
+
+Katkılarınızı bekleriz! Bu projeye katkıda bulunmak isterseniz, lütfen depoyu forklayarak önerdiğiniz değişikliklerle bir pull request oluşturun. Kodunuzun en iyi uygulamalara uygun olduğundan ve gerekli testleri içerdiğinden emin olun.
+
+# Lisans
+
+Bu proje LICENSE dosyasına bakın.
+
+# İletişim
+Herhangi bir sorunuz veya geri bildiriminiz için lütfen bizimle iletişime geçin.
 
 
-# Proje Yapısı:
-
-src/test/resources/features: Gherkin dilinde yazılmış test senaryoları burada bulunur.
-
-src/test/java/stepdefinitions: Test senaryolarına ait adımların Java ile tanımlandığı sınıflar burada yer alır.
-
-src/test/java/runners: Testlerin çalıştırıldığı Cucumber runner sınıfları burada bulunur.
-
-src/test/resources: Test verileri ve yapılandırma dosyaları burada yer alır.
-
-
-# Nasıl Çalıştırılır? :
-
-Projeyi bilgisayarınıza klonlayın.
-IntelliJ IDEA veya tercih ettiğiniz bir IDE ile projeyi açın.
-Gerekli bağımlılıkları yükleyin (Maven veya Gradle kullanarak).
-src/test/java/runners klasöründeki Runner sınıflarını kullanarak testleri çalıştırın.
-Test sonuçlarını ve raporları inceleyin.
-
-# Veritabanı Testleri:
-
-Proje ayrıca, veritabanı üzerinde gerçekleştirilen işlemler için test senaryoları içerir. Bu testler, veritabanındaki belirli tablolar üzerinde yapılan işlemleri doğrular.
