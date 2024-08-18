@@ -5,19 +5,30 @@ Bu proje, bir sağlayıcı olarak API bağlantıları üzerinden çeşitli işle
 Kullanılan Teknolojiler:
 
 Postman: API isteklerini test etmek ve doğrulamak için kullanılır.
+
 Java: Test otomasyonunu gerçekleştirmek için kullanılan programlama dili.
+
 JUnit: Testleri çalıştırmak ve sonuçları raporlamak için kullanılır.
+
 Gherkin: Test senaryolarını tanımlamak için kullanılan dil.
+
 Cucumber: Gherkin senaryolarını çalıştırarak test otomasyonunu gerçekleştirmek için kullanılır.
+
 IntelliJ IDEA: Projeyi geliştirmek ve çalıştırmak için kullanılan IDE.
+
 MySQL: Veritabanı işlemlerini gerçekleştirmek ve doğrulamak için kullanılır.
+
 
 Proje Yapısı:
 
 src/test/resources/features: Gherkin dilinde yazılmış test senaryoları burada bulunur.
+
 src/test/java/stepdefinitions: Test senaryolarına ait adımların Java ile tanımlandığı sınıflar burada yer alır.
+
 src/test/java/runners: Testlerin çalıştırıldığı Cucumber runner sınıfları burada bulunur.
+
 src/test/resources: Test verileri ve yapılandırma dosyaları burada yer alır.
+
 
 Nasıl Çalıştırılır? :
 
