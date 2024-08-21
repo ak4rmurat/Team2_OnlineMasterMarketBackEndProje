@@ -1,4 +1,5 @@
-Feature: bank_account tablosunda status degeri active, inactive, pending olan rastgele 4 data ekleme.Tabloya eklenen datalardan aktif olan hesapları dogrulama
+Feature: bank_account tablosunda status degeri active, inactive, pending olan rastgele 4 data ekleme.
+  Tabloya eklenen datalardan aktif olan hesapları dogrulama
 
   Scenario: Data ekleme ve eklenenlerden aktif olanlari dogrulama
 

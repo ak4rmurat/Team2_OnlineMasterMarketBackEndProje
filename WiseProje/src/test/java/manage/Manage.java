@@ -26,4 +26,11 @@ public class Manage {
   private String US27_incomplated_data_insert_users_table="INSERT INTO u201212290_onlinemasterqa.users (mobileno, country_code, currency_code, status, usertype) VALUES (?, ?, ?,?,?);";
 
 
+  private String US06_bank_account_veri_girisi  = "INSERT INTO u201212290_onlinemasterqa.bank_account (id, user_id, user_name, acc_no, bank_name, bank_addr, ifsc_code, pancard_no, paypal_account, paypal_email_id, status) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
+  private String US08_inactive_kullanici_sayisi = "SELECT COUNT(*) AS inactive_count FROM bank_account WHERE status = 'inactive';";
+  private String US08_kullanici_sil             = "DELETE FROM bank_account WHERE status = 'inactive';";
+  private String US17_enCokMesajGonderenKisi    = "WITH MessageCounts AS (SELECT name, COUNT(*) AS message_count FROM contact_form_details GROUP BY name);";
+  private String US17_enCokAtilanMesaj          = "SELECT name FROM contact_form_details GROUP BY name ORDER BY COUNT(*) DESC LIMIT 1;";
+
+
 }
