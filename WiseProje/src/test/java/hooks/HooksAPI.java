@@ -32,6 +32,8 @@ public class HooksAPI {
                 .build();
 
         setupApiCompleted = true;
+
+        System.out.println(token);
     }
 
     @After
