@@ -11,8 +11,14 @@ public class DB_US006 {
 
 
     }
-    @Given("bank_account tablosuna status degeri active, inactive ve pending olan rastgele 4 data eklenir")
-    public void bank_account_tablosuna_status_degeri_active_inactive_ve_pending_olan_rastgele_data_eklenir() {
+    @Given("status degeri active inactive ve pending olan dort tane query olusturulur")
+    public void status_degeri_active_inactive_ve_pending_olan_tane_query_olusturulur() {
+
+
+
+    }
+    @Given("olusturulan queryler bank_account tablosuna eklenir")
+    public void olusturulan_queryler_bank_account_tablosuna_eklenir() {
 
 
 
