@@ -20,21 +20,16 @@ public class API_Stepdefinitions {
             API_Methods.pathParam(pathParam + "/" + API_Methods.addedId);
         }
 
-
-
-
     }
 
     @Given("The api user sends a {string} request and saves the returned response.")
     public void the_api_user_sends_a_request_and_saves_the_returned_response(String httpMethod) {
+
         if (requestBody == null || requestBody.isEmpty()) {
             API_Methods.sendRequest(httpMethod, null);
         } else {
             API_Methods.sendRequest(httpMethod, requestBody);
         }
-
-
-
 
     }
 
