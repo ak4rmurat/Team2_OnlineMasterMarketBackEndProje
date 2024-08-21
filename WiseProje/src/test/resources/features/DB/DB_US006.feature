@@ -3,6 +3,6 @@ Feature: bank_account tablosunda status degeri 'active,inactive,pending' olan ra
   Scenario: Data ekleme ve eklenenlerden aktif olanlari dogrulama
 
     * veri tabanina baglanti kurulur
-    *
-    *
+    * bank_account tablosuna status degeri active, inactive ve pending olan rastgele 4 data eklenir
+    * tabloya eklenen datalardan aktif olan hesaplar dogrulanir
     * veri tabani ile baglanti kesilir

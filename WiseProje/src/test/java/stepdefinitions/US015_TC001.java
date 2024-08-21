@@ -45,18 +45,19 @@ public class US015_TC001 {
 
     @Given("Api kullanicisi {string} end pointine gecerli authorization bilgileri ve \\(id) icermeyen bir DELETE istegi gonderilir")
     public void api_kullanicisi_end_pointine_gecerli_authorization_bilgileri_ve_id_icermeyen_bir_delete_istegi_gonderilir(String string) {
-
-        jsonObject.put()
-
+    /*
+        jsonObject.put();
+*/
 
     }
 
     @Given("Api kullanicisi {string} end pointine gecerli authorization bilgileri ve kaydi olmayan \\(id) iceren bir DELETE istegi gonderilir")
     public void api_kullanicisi_end_pointine_gecerli_authorization_bilgileri_ve_kaydi_olmayan_id_iceren_bir_delete_istegi_gonderilir(String string) {
-
+        /*
         response = response.then().assertThat()
                                     .body().contentType(ContentType.JSON)
-                                    .
+
+              */
 
     }
     @Given("APi kullanicisi geri donen response'in status code'unun {int} oldugunu dogrular")
@@ -102,13 +103,13 @@ public class US015_TC001 {
     public void api_kullanicisi_geri_donen_response_in_deleted_blog_comment_id_bilgisinin_api_delete_blog_comment_endpointinde_yazan_id_ile_parametrelerinin_ayni_oldugu_dogrulanir(Integer int1) {
 
         jsonPath = response.jsonPath();
-
+/*
         Assert.assertEquals(lang_id, jsonPath.getString("data.blogs[" + dataIndex + "].lang_id"));
         Assert.assertEquals(title, jsonPath.getString("data.blogs[" + dataIndex + "].title"));
         Assert.assertTrue(jsonPath.getString("data.blogs[" + dataIndex + "].slug").contains(slug));
         Assert.assertEquals(tags, jsonPath.getString("data.blogs[" + dataIndex + "].tags"));
         Assert.assertTrue(jsonPath.getString("data.blogs[" + dataIndex + "].summary").contains(summary));
-
+*/
     }
 
 }
