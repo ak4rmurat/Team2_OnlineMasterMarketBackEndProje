@@ -1,4 +1,4 @@
-Feature: contact_form_details tablosundan en çok gönderim yapılmış kişinin adını ve mesaj sayısını dogrulama
+Feature: contact_form_details tablosundan en cok gonderim yapilmis kisinin adini ve mesaj sayisini dogrulama
 
   Scenario: tablodan en cok gonderim yapan kisinin adini ve mesaj sayisini dogrulama
 
