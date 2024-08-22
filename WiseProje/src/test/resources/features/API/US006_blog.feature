@@ -18,3 +18,11 @@ Feature:Bir provider olarak API bağlantısı üzerinden blog kategorilerine eri
       | id | lang_id | name               | slug               | description | keywords | category_order | status | createdAt           | createdBy | updateAt            | updateBy |
       | 0  | 1       | Household Services | household-services |             |          | 1              | 1      | 2022-10-03 19:57:19 | 1         | 2024-06-28 23:15:56 | 1        |
 
+
+
+
+  Scenario: Invalid Token Blog Categories   -   AC3
+
+    * Api kullanicisi "api/blogCategories" path parametrelerini olusturur
+    * Api kullanicisi "GET" request gonderir, donen responsei kaydeder, status codeun '401' ve reason phrase bilgisinin Unauthorized oldugunu dogrular
+
