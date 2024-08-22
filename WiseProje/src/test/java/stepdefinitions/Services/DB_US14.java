@@ -14,7 +14,7 @@ import java.util.Map;
 
 
 
-public class DB_Services_US14 {
+public class DB_US14 {
     private Connection connection;
     private ResultSet resultSet;
     private String jdbcUrl = "URL: \"jdbc:mysql://45.87.83.5/u168183796_qaonlineuser\";\t"; // Veritabanı URL'i

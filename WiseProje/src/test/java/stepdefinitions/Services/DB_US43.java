@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 
-public class DB_Services_US43 {
+public class DB_US43 {
 
     private Connection connection;
     private ResultSet resultSet;

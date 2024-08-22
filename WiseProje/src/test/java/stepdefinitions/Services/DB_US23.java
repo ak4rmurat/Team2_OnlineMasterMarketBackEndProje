@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class DB_Services_US23 {
+public class DB_US23 {
 
 
     private Connection connection;
