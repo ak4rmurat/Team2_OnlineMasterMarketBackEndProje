@@ -31,9 +31,9 @@ Feature:Post addShop
   Scenario:  TC03
 
     * Api kullanicisi "api/addShop" path parametresini olusturur
-    * Api kullanicisi request body olustururrr.
     * Api kullanicisi post request icin donen response kaydederrr
     * Donen response icin status code'un 203 oldugu dogrulanir
+    * Donen response icin "response_message" bilgisinin "No data for updated. Required fields empty\"" oldugu dogulanir
 
 
   Scenario Outline: TC04 Invalid Token

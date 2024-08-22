@@ -4,11 +4,13 @@ package stepdefinitions;
 import hooks.HooksAPI;
 import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import org.json.JSONObject;
 import org.junit.Assert;
 import utilities.API_Utilities.API_Methods;
 import io.restassured.response.Response;
 import utilities.API_Utilities.Authentication;
+import static io.restassured.RestAssured.given;
 
 import java.util.Optional;
 
@@ -79,7 +81,9 @@ public class muratStepdefinitions {
         requestBody.put("tax_allow", tax_allow);
         requestBody.put("category", category);
         requestBody.put("sub_category", sub_category);
-        System.out.println("RequestBody : " + requestBody.toString());
+
+        System.out.println(requestBody.toString());
+
 
 
     }
@@ -112,22 +116,68 @@ public class muratStepdefinitions {
 
     }
 
-    @Given("Api kullanicisi bos request body olusturur.")
-    public void api_kullanicisi_bos_request_body_olusturur() {
-        requestBody = null;
-    }
 
     @Given("Api kullanicisi post request icin donen response kaydederrr")
     public void api_kullanicisi_post_request_icin_donen_response_kaydederr() {
 
-        API_Methods.sendRequest("POST", requestBody);
+        String requestBody = "{}";
+        try {
+            API_Methods.sendRequest("POST", requestBody);
+        }catch (Exception e){
+            exceptionMesaj = e.getMessage();
+
+        }
+
+
+        System.out.println("Mesaj : " + exceptionMesaj);
 
     }
 
-    @Given("Api kullanicisi request body olustururrr.")
-    public void api_kullanici_request_body_i_olustururrr() {
-        requestBody = new JSONObject(Optional.ofNullable(null));
-        System.out.println(requestBody.toString());
+    @Given("Api kullanicisi request body olusturur.")
+    public void api_kullanici_request_body_i_olustururrr(String shop_title, String description, String contact_no, String email, String address, int tax_allow, int category, int sub_category) {
+
+        requestBody = new JSONObject();
+        requestBody.put("shop_title", shop_title);
+        requestBody.put("description", description);
+        requestBody.put("contact_no", contact_no);
+        requestBody.put("email", email);
+        requestBody.put("address", address);
+        requestBody.put("tax_allow", tax_allow);
+        requestBody.put("category", category);
+        requestBody.put("sub_category", sub_category);
+        System.out.println("RequestBody : " + requestBody.toString());
+
+
+    }
+
+    @Given("Api kullanicisi patch request icin donen response kaydederr")
+    public void api_kullanicisi_post_request_icin_donen_response_kaydederrr() {
+
+        try {
+            API_Methods.sendRequest("PATCH", requestBody);
+        }catch (Exception e){
+            exceptionMesaj = e.getMessage();
+
+        }
+
+
+        System.out.println("Mesaj : " + exceptionMesaj);
+
+
+    }
+
+    @Given("Api kullanicisi data icermeyen patch request icin donen response kaydederr")
+    public void api_kullanicisi_post_request_icin_donen_response_kaydederrrr() {
+        String requestBody = "{}";
+        try {
+            API_Methods.sendRequest("PATCH", requestBody);
+        }catch (Exception e){
+            exceptionMesaj = e.getMessage();
+
+        }
+
+
+        System.out.println("Mesaj : " + exceptionMesaj);
 
 
     }
