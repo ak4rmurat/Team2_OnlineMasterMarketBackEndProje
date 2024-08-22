@@ -86,7 +86,8 @@ public class US008_API_Stepdefinitou {
     }
 
     @Given("Api kullanicisi status codeun {int} oldugunu dogrularr")
-    public void api_kullanicisi_status_codeun_oldugunu_dogrularr(int code) {API_Methods.statusCodeAssert(code);
+    public void api_kullanicisi_status_codeun_oldugunu_dogrularr(int code) {
+        API_Methods.statusCodeAssert(code);
 
     }
     @Given("Api kullanicisi  request body olusturur")

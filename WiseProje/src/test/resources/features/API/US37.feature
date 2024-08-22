@@ -1,4 +1,4 @@
-Feature:
+Feature:Shop details
 
   Scenario Outline: TC01
 
@@ -31,7 +31,7 @@ Feature:
 
     Examples:
       | id |
-      | 57 |
+      | 5712 |
 
   Scenario Outline: Invalid Token TC04
 
@@ -45,5 +45,3 @@ Feature:
       | 57 |
 
 
-    * Donen response icin status code'un 405 oldugu dogrulanir
-    * Donen response icin "response.response_message" bilgisinin "Shop added successfully" oldugu dogulanir
