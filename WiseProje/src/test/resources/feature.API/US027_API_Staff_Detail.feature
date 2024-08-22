@@ -4,7 +4,7 @@ Feature: Bir provider olarak API baglantisi üzerinden belirtilen id numarasına
   Scenario Outline: Staff List - AC 1
 
     * Api kullanicisi "api/staff-detail/<id>" path parametrelerini olusturur
-    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder
+    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder-get
     * Api kullanicisi status codeun 200 oldugunu dogrular
     * Api kullanicisi response bodydeki "response.response_message" bilgisinin "Staff Details" oldugunu dogrular
 
@@ -17,7 +17,7 @@ Feature: Bir provider olarak API baglantisi üzerinden belirtilen id numarasına
   Scenario Outline: Staff List - AC 2
 
     * Api kullanicisi "api/staff-detail/<id>" path parametrelerini olusturur
-    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder
+    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder-get
     * Api kullanicisi status codeun 200 oldugunu dogrular
     * Api kullanicisi response bodydeki "response.response_message" bilgisinin "Staff Details" oldugunu dogrular
     * Api kullanicisi response bodydeki data "<id>", "<provider_id>", "<first_name>", "<last_name>", "<country_code>", "<contact_no>", "<email>","<password>" "<dob>", "<gender>" bilgilerini doğrular.
@@ -31,7 +31,7 @@ Feature: Bir provider olarak API baglantisi üzerinden belirtilen id numarasına
   Scenario Outline: Staff List - AC 3
 
     * Api kullanicisi "api/staff-detail/<id>" path parametrelerini olusturur
-    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder
+    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder-get
     * Api kullanicisi status codeun 203 oldugunu dogrular
     * Api kullanicisi response bodydeki "response.response_message" bilgisinin "Id missing" oldugunu dogrular--,---
     Examples:
@@ -42,7 +42,7 @@ Feature: Bir provider olarak API baglantisi üzerinden belirtilen id numarasına
   Scenario Outline: Staff List - AC 4
 
     * Api kullanicisi "api/staff-detail/<id>" path parametrelerini olusturur
-    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder
+    * Api kullanicisi "GET" request gonderir ve donen responsei kaydeder-get
     * Api kullanicisi status codeun 203 oldugunu dogrular
     * Api kullanicisi response bodydeki "response.response_message" bilgisinin "No Details found" oldugunu dogrular
     Examples:
