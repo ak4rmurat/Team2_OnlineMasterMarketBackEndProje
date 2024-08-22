@@ -17,6 +17,13 @@ public class US028_API_addStaff {
     HashMap<String, Object> reqBody;
 
 
+
+    @Given("Api kullanicisi {string} request gonderir ve donen responsei kaydeder-post")
+    public void api_kullanicisi_request_gonderir_ve_donen_responsei_kaydeder_post(String httpMethod) {
+
+        API_Methods.sendRequest(httpMethod, reqBody);
+
+    }
     @Given("Api kullanicisi api addBlog endpointine gondermek icin {string}, {string}, {string}, {string}, {string}, {string}, {string} bilgilerini iceren bir post request hazirlar")
     public void api_kullanicisi_api_add_blog_endpointine_gondermek_icin_bilgilerini_iceren_bir_post_request_hazirlar(String firstname, String mobileno, String email, String gender, String dob, String shop_id, String about_emp) {
 
