@@ -44,6 +44,3 @@ Feature:
       | id |
       | 57 |
 
-
-    * Donen response icin status code'un 405 oldugu dogrulanir
-    * Donen response icin "response.response_message" bilgisinin "Shop added successfully" oldugu dogulanir
